@@ -22,5 +22,7 @@ class TimetableSplitter {
         }
         
         self.calendar = calendar
+        
+        print(calendar.rawData)
     }
 }
