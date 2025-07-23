@@ -14,15 +14,22 @@ struct TimetableSplitterOptions: ParsableCommand {
     @Argument(help: "The path to the .ics file to be split.")
     var filePath: String
     
+    @Option(name: .shortAndLong,
+            help: "The path to the output directory for the split .ics files.")
+    var outputPath: String? = nil
+    
     mutating func run() throws {
         let splitter = try TimetableSplitter(filePath: filePath)
         
-        let currentDirectory = FileManager().currentDirectoryPath
-        let currentDirectoryURL = URL(fileURLWithPath: currentDirectory)
-            .appending(path: "output.ics")
-        
-        try splitter
-            .havingBeenSplit().first!.rawData
-            .write(to: currentDirectoryURL, atomically: true, encoding: .utf8)
+        for (count, calendar) in splitter.havingBeenSplit().enumerated() {
+            let currentDirectory = FileManager().currentDirectoryPath
+            let outputPath: String = self.outputPath ?? currentDirectory
+            
+            let outputURL = URL(fileURLWithPath: outputPath)
+                .appending(component: "\(count + 1).ics")
+            
+            try calendar.rawData
+                .write(to: outputURL, atomically: true, encoding: .utf8)
+        }
     }
 }
