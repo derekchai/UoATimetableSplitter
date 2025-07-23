@@ -33,9 +33,9 @@ extension ICalendar {
             guard let summary = event.summary else { continue }
             
             let startFormatted = start.date
-                    .ISO8601Format(ICalendar.iso8601FormatStyle)
+                .ISO8601Format(ICalendar.iso8601FormatStyle)
             let endFormatted = end.date
-                    .ISO8601Format(ICalendar.iso8601FormatStyle)
+                .ISO8601Format(ICalendar.iso8601FormatStyle)
             
             rawData.appendLine("""
             BEGIN:VEVENT
@@ -46,17 +46,17 @@ extension ICalendar {
             
             if var description = event.description {
                 description = description
-                        .replacingOccurrences(of: "\\n", with: "\n")
+                    .replacingOccurrences(of: "\\n", with: "\n")
                 
                 let descriptionLines: [String] = description
-                        .split(whereSeparator: \.isNewline).map { String($0) }
+                    .split(whereSeparator: \.isNewline).map { String($0) }
                 
                 let prefix = "Location Name: "
                 let location: String? = descriptionLines
-                        .filter { $0.hasPrefix(prefix) }
-                        .first?
-                        .removingPrefix(prefix)
-                        .trimmingCharacters(in: .whitespacesAndNewlines)
+                    .filter { $0.hasPrefix(prefix) }
+                    .first?
+                    .removingPrefix(prefix)
+                    .trimmingCharacters(in: .whitespacesAndNewlines)
                 
                 if let location {
                     rawData.appendLine("LOCATION:\(location)")
