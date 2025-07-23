@@ -56,6 +56,10 @@
             argument = "/Users/derekchai/Desktop/example.ics"
             isEnabled = "YES">
          </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/does/not/exist"
+            isEnabled = "NO">
+         </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
    <ProfileAction

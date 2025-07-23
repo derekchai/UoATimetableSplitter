@@ -12,9 +12,9 @@ import ArgumentParser
 struct TimetableSplitterOptions: ParsableCommand {
     /// The path to the .ics file to be split.
     @Argument(help: "The path to the .ics file to be split.")
-    var path: String
+    var filePath: String
     
     mutating func run() throws {
-        print("Path: \(path)")
+        let splitter = try TimetableSplitter(filePath: filePath)
     }
 }
