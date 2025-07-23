@@ -1,0 +1,11 @@
+//
+//  main.swift
+//  UoATimetableSplitter
+//
+//  Created by Derek Chai on 24/07/2025.
+//
+
+import Foundation
+
+print("Hello, World!")
+
