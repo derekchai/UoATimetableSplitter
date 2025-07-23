@@ -22,7 +22,25 @@ class TimetableSplitter {
         }
         
         self.calendar = calendar
+    }
+    
+    func havingBeenSplit() -> [ICalendar] {
+        var splitCalendars: [ICalendar] = []
         
-        print(calendar.rawData)
+        let groupedEvents = Dictionary(
+            grouping: calendar.events,
+            by: { $0.summary?.components(separatedBy: "/").first }
+        )
+        
+        for events in groupedEvents.values {
+            let calendar = ICalendar(
+                events: events,
+                productId: ICProductIdentifier("Split")
+            )
+            
+            splitCalendars.append(calendar)
+        }
+        
+        return splitCalendars
     }
 }

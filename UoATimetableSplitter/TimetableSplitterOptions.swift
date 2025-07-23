@@ -16,5 +16,13 @@ struct TimetableSplitterOptions: ParsableCommand {
     
     mutating func run() throws {
         let splitter = try TimetableSplitter(filePath: filePath)
+        
+        let currentDirectory = FileManager().currentDirectoryPath
+        let currentDirectoryURL = URL(fileURLWithPath: currentDirectory)
+            .appending(path: "output.ics")
+        
+        try splitter
+            .havingBeenSplit().first!.rawData
+            .write(to: currentDirectoryURL, atomically: true, encoding: .utf8)
     }
 }

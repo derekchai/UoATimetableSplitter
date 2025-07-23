@@ -21,7 +21,7 @@ extension ICalendar {
     var rawData: String {
         var rawData = """
         BEGIN:VCALENDAR
-        VERSION: 2.0
+        VERSION:2.0
         PRODID://Split Calendar//
         """
         
@@ -56,6 +56,7 @@ extension ICalendar {
                         .filter { $0.hasPrefix(prefix) }
                         .first?
                         .removingPrefix(prefix)
+                        .trimmingCharacters(in: .whitespacesAndNewlines)
                 
                 if let location {
                     rawData.appendLine("LOCATION:\(location)")
