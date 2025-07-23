@@ -21,14 +21,14 @@ struct TimetableSplitterOptions: ParsableCommand {
     mutating func run() throws {
         let splitter = try TimetableSplitter(filePath: filePath)
         
-        for (count, calendar) in splitter.havingBeenSplit().enumerated() {
+        for calendar in splitter.havingBeenSplit() {
             let currentDirectory = FileManager().currentDirectoryPath
             let outputPath: String = self.outputPath ?? currentDirectory
             
             let outputURL = URL(fileURLWithPath: outputPath)
-                .appending(component: "\(count + 1).ics")
+                .appending(component: "\(calendar.0).ics") // Subject name
             
-            try calendar.rawData
+            try calendar.1.rawData // ICalendar object
                 .write(to: outputURL, atomically: true, encoding: .utf8)
         }
     }
