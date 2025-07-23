@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A861BDB22E318FFC008A5554 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = A861BDB12E318FFC008A5554 /* ArgumentParser */; };
+		A861BDC62E3194A5008A5554 /* iCalendarParser in Frameworks */ = {isa = PBXBuildFile; productRef = A861BDC52E3194A5008A5554 /* iCalendarParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A861BDB22E318FFC008A5554 /* ArgumentParser in Frameworks */,
+				A861BDC62E3194A5008A5554 /* iCalendarParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,7 @@
 			name = UoATimetableSplitter;
 			packageProductDependencies = (
 				A861BDB12E318FFC008A5554 /* ArgumentParser */,
+				A861BDC52E3194A5008A5554 /* iCalendarParser */,
 			);
 			productName = UoATimetableSplitter;
 			productReference = A861BD9F2E318F5B008A5554 /* UoATimetableSplitter */;
@@ -117,6 +120,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A861BDB02E318FFC008A5554 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				A861BDC42E3194A5008A5554 /* XCRemoteSwiftPackageReference "iCalendarParser" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A861BDA02E318F5B008A5554 /* Products */;
@@ -314,6 +318,14 @@
 				minimumVersion = 1.6.1;
 			};
 		};
+		A861BDC42E3194A5008A5554 /* XCRemoteSwiftPackageReference "iCalendarParser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmail-me/iCalendarParser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -321,6 +333,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A861BDB02E318FFC008A5554 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;
+		};
+		A861BDC52E3194A5008A5554 /* iCalendarParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A861BDC42E3194A5008A5554 /* XCRemoteSwiftPackageReference "iCalendarParser" */;
+			productName = iCalendarParser;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
