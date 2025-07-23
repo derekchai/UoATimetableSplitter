@@ -6,13 +6,21 @@
 //
 
 import Foundation
+import iCalendarParser
 
 class TimetableSplitter {
-    /// The raw data of the .ics file as a string.
-    private let rawData: String
+    private let calendar: ICalendar
     
     init(filePath: String) throws {
         let url = URL(filePath: filePath)
-        self.rawData = try String(contentsOf: url, encoding: .utf8)
+        let filename = url.lastPathComponent
+        
+        let rawData = try String(contentsOf: url, encoding: .utf8)
+        
+        guard let calendar = ICParser().calendar(from: rawData) else {
+            throw TimetableSplitterError.unableToParseICS(filename)
+        }
+        
+        self.calendar = calendar
     }
 }

@@ -54,6 +54,10 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "/Users/derekchai/Desktop/example.ics"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/derekchai/Desktop/839130355.ics"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
