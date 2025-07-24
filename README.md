@@ -1,8 +1,8 @@
 # UoA Timetable Splitter
 This is a simple command-line program which splits an `ics` calendaring file 
-obtained from the University of Auckland [My Timetable tool]
-(https://mytimetable.auckland.ac.nz) into separate sub-calendars (each with
-their own `ics` file) by subject/course.
+obtained from the University of Auckland 
+[My Timetable tool](https://mytimetable.auckland.ac.nz) into separate 
+sub-calendars (each with their own `ics` file) by subject/course.
 
 This may be useful for importing into external calendaring software (e.g. Apple
 Calendar) and allows the assignment of unique colours to each course's calendar,
@@ -14,8 +14,8 @@ This program is not affiliated with or approved by the University of Auckland.
 
 # Installation
 ## Executable
-Download the `exe` file from this repository's [Releases]
-(https://github.com/derekchai/UoATimetableSplitter/releases) page. 
+Download the `exe` file from this repository's
+[Releases](https://github.com/derekchai/UoATimetableSplitter/releases) page. 
 
 ## Compile
 The source code for the project is available at this repository to be compiled
