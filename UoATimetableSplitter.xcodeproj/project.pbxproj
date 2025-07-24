@@ -24,11 +24,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A81657C52E31B30E00CA4F10 /* UoATimetableSplitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UoATimetableSplitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A861BD9F2E318F5B008A5554 /* UoATimetableSplitter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UoATimetableSplitter; sourceTree = BUILT_PRODUCTS_DIR; };
 		A861BDA92E318F68008A5554 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A81657C62E31B30E00CA4F10 /* UoATimetableSplitterTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UoATimetableSplitterTests;
+			sourceTree = "<group>";
+		};
 		A861BDA12E318F5B008A5554 /* UoATimetableSplitter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = UoATimetableSplitter;
@@ -37,6 +43,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A81657C22E31B30E00CA4F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A861BD9C2E318F5B008A5554 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,6 +67,7 @@
 			children = (
 				A861BDA92E318F68008A5554 /* .gitignore */,
 				A861BDA12E318F5B008A5554 /* UoATimetableSplitter */,
+				A81657C62E31B30E00CA4F10 /* UoATimetableSplitterTests */,
 				A861BDA02E318F5B008A5554 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				A861BD9F2E318F5B008A5554 /* UoATimetableSplitter */,
+				A81657C52E31B30E00CA4F10 /* UoATimetableSplitterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +84,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A81657C42E31B30E00CA4F10 /* UoATimetableSplitterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A81657CB2E31B30E00CA4F10 /* Build configuration list for PBXNativeTarget "UoATimetableSplitterTests" */;
+			buildPhases = (
+				A81657C12E31B30E00CA4F10 /* Sources */,
+				A81657C22E31B30E00CA4F10 /* Frameworks */,
+				A81657C32E31B30E00CA4F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A81657C62E31B30E00CA4F10 /* UoATimetableSplitterTests */,
+			);
+			name = UoATimetableSplitterTests;
+			packageProductDependencies = (
+			);
+			productName = UoATimetableSplitterTests;
+			productReference = A81657C52E31B30E00CA4F10 /* UoATimetableSplitterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A861BD9E2E318F5B008A5554 /* UoATimetableSplitter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A861BDA62E318F5B008A5554 /* Build configuration list for PBXNativeTarget "UoATimetableSplitter" */;
@@ -103,6 +140,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					A81657C42E31B30E00CA4F10 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					A861BD9E2E318F5B008A5554 = {
 						CreatedOnToolsVersion = 16.0;
 						LastSwiftMigration = 1600;
@@ -128,11 +168,29 @@
 			projectRoot = "";
 			targets = (
 				A861BD9E2E318F5B008A5554 /* UoATimetableSplitter */,
+				A81657C42E31B30E00CA4F10 /* UoATimetableSplitterTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A81657C32E31B30E00CA4F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A81657C12E31B30E00CA4F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A861BD9B2E318F5B008A5554 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,6 +201,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A81657C92E31B30E00CA4F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FR86D5B46K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = youngboris.UoATimetableSplitterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A81657CA2E31B30E00CA4F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FR86D5B46K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = youngboris.UoATimetableSplitterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		A861BDA42E318F5B008A5554 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -289,6 +377,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A81657CB2E31B30E00CA4F10 /* Build configuration list for PBXNativeTarget "UoATimetableSplitterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A81657C92E31B30E00CA4F10 /* Debug */,
+				A81657CA2E31B30E00CA4F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A861BD9A2E318F5B008A5554 /* Build configuration list for PBXProject "UoATimetableSplitter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
