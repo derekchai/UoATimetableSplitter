@@ -22,6 +22,7 @@ The source code for the project is available at this repository to be compiled
 manually.
 
 # Usage
+At the command line:
 ```
 UoATimetableSplitter <file-path> [--output-path <output-path>]
 ```
@@ -29,9 +30,9 @@ UoATimetableSplitter <file-path> [--output-path <output-path>]
 Run `UoATimetableSplitter` with flag `-h` for help.
 
 # Example
-To split the `ics` file `my_calendar.ics`:
+To split the `ics` file `my_calendar.ics` into another directory:
 
-1. Run `./UoATimetableSplitter my_calendar.ics`
+1. Run `./UoATimetableSplitter my_calendar.ics -o split_calendars`
 
 By default, the output files will be output in the current directory. Use the
-`--output-path` option to specify an alternative directory.
+`--output-path` (`-o`) option to specify an alternative directory.
