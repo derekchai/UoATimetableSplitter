@@ -24,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A81658092E31B82D00CA4F10 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A861BD9F2E318F5B008A5554 /* UoATimetableSplitter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UoATimetableSplitter; sourceTree = BUILT_PRODUCTS_DIR; };
 		A861BDA92E318F68008A5554 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +53,7 @@
 		A861BD962E318F5B008A5554 = {
 			isa = PBXGroup;
 			children = (
+				A81658092E31B82D00CA4F10 /* README.md */,
 				A861BDA92E318F68008A5554 /* .gitignore */,
 				A861BDA12E318F5B008A5554 /* UoATimetableSplitter */,
 				A861BDA02E318F5B008A5554 /* Products */,
