@@ -10,10 +10,12 @@ import ArgumentParser
 
 @main
 struct TimetableSplitterOptions: ParsableCommand {
-    /// The path to the .ics file to be split.
+    /// The path to the `ics` file to be split.
     @Argument(help: "The path to the .ics file to be split.")
     var filePath: String
     
+    /// The path to the output directory in which the output `ics` files will
+    /// be saved.
     @Option(name: .shortAndLong,
             help: "The path to the output directory for the split .ics files.")
     var outputPath: String? = nil

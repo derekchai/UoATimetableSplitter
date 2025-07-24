@@ -18,6 +18,7 @@ extension ICalendar {
         timeZone: .gmt
     )
     
+    /// The raw string representation of this ``ICalendar``, in `ics` format.
     var rawData: String {
         var rawData = """
         BEGIN:VCALENDAR
